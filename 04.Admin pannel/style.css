@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+main {
+  display: flex;
+}
+.sidenavWrapper {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  box-shadow: 10px 10px 10px rgba(227, 215, 215, 0.434);
+  padding: 10px 10px;
+}
+
+.sidenavWrapper.active {
+  width: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.sidenavWrapper .logoicon {
+  font-size: 40px;
+  margin: 10px 10px 30px 20px;
+}
+.sidenavcenter {
+  margin-bottom: auto;
+}
+.sidebarbottom {
+  margin-top: auto;
+}
+.sidenavcenter > li > a,
+.sidebarbottom > li > a {
+  color: #000;
+  margin-left: 5px;
+}
+
+.sidenavcenter > li,
+.sidebarbottom > li {
+  padding: 10px 20px;
+  transition: all 0.3s;
+}
+
+.sidenavcenter > li:hover,
+.sidebarbottom > li:hover {
+  color: #ff69b4;
+  transform: translateX(4px);
+}
+.sidenavcenter > li > a:hover,
+.sidebarbottom > li > a:hover {
+  color: #ff69b4;
+}
+
+/* main wrappwe styling */
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  width: 100%;
+}
+.mainnavContainer {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+}
+.menuiconContainer {
+  cursor: pointer;
+  width: 20%;
+}
+.menuiconContainer .line {
+  margin: 3px 0;
+  width: 20px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #000;
+}
+.mainnavContainer .searchContainer {
+  width: 100%;
+}
+.mainnavContainer .searchContainer > input {
+  font: 18px;
+  outline: none;
+  border: none;
+  border: 1px solid #998484;
+  border-radius: 10px;
+  padding: 10px;
+  width: 90%;
+}
+
+.mainnavContainer .userprofileContainer {
+  width: 50px;
+  position: relative;
+}
+.mainnavContainer .userprofileContainer > img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+/* dashboard styling */
+.dashboardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.dashboardContainer .dasTitle {
+  width: 100%;
+  margin-top: 20px;
+}
+.dashboardContainer .cardWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.dashboardContainer .cardcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.dashboardContainer .skyblue {
+  background-color: #87dcfd;
+}
+
+.dashboardContainer .yellow {
+  background-color: #e7fb97;
+}
+
+.dashboardContainer .purple {
+  background-color: #f3b2ff;
+}
+
+.dashboardContainer .red {
+  background-color: #ffb2b2;
+}
+
+.dashboardContainer .cardcontainer > i {
+  font-size: 25px;
+  margin: 5px 0px;
+}
+.dashboardContainer .cardcontainer > p {
+  text-transform: capitalize;
+}
+
+/* user data styleing */
+.userContainer {
+  display: flex;
+  flex-direction: column;
+}
+.userContainer .userdatatitle {
+  width: 100%;
+  font-size: 24px;
+}
+.userContainer .userdataTable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  padding: 10px;
+}
+
+.userdataTable table {
+  width: 100%;
+  text-align: left;
+}
+
+th {
+  line-height: 40px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+td {
+  line-height: 28px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.userdataTable tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

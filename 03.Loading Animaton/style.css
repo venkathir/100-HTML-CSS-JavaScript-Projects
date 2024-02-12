@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.loaderWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.loaderContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0 20px;
+}
+.loading {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0px 10px;
+  animation: load 0.8s ease infinite;
+}
+.loading.one {
+  background-color: red;
+  animation-delay: 0.3s;
+}
+.loading.two {
+  background-color: blue;
+  animation-delay: 0.4s;
+}
+.loading.three {
+  background-color: orange;
+  animation-delay: 0.5s;
+}
+.loading.four {
+  background-color: yellow;
+  animation-delay: 0.6s;
+}
+.loading.five {
+  background-color: green;
+  animation-delay: 0.7s;
+}
+@keyframes load {
+  0% {
+    width: 30px;
+    height: 30px;
+  }
+  50% {
+    width: 20px;
+    height: 20px;
+  }
+}

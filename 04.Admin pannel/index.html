@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>responsive admin pannel</title>
+    <!-- font awsome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- side bar navigation  -->
+      <section class="sidenavWrapper">
+        <h2><i class="fa-solid fa-house logoicon"></i>Logo</h2>
+        <ul class="sidenavcenter">
+          <li><i class="fa-solid fa-house"></i><a href="#"> Dashboard </a></li>
+          <li><i class="fa-solid fa-user"></i><a href="#"> User </a></li>
+          <li>
+            <i class="fa-sharp fa-solid fa-chart-simple"></i
+            ><a href="#"> Analytics </a>
+          </li>
+          <li>
+            <i class="fa-regular fa-square-plus"></i><a href="#"> Post </a>
+          </li>
+          <li>
+            <i class="fa-solid fa-calendar-check"></i><a href="#"> Events </a>
+          </li>
+          <li>
+            <i class="fa-sharp fa-solid fa-floppy-disk"></i
+            ><a href="#"> Saves </a>
+          </li>
+          <li><i class="fa-solid fa-envelope"></i><a href="#"> Email </a></li>
+          <li>
+            <i class="fa-solid fa-calendar-day"></i><a href="#"> Calendar </a>
+          </li>
+        </ul>
+        <ul class="sidebarbottom">
+          <li><i class="fa-solid fa-gear"></i><a href="#"> Settings </a></li>
+          <li>
+            <i class="fa-solid fa-calendar-days"></i><a href="#"> Logout </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="mainWrapper">
+        <div class="mainnavContainer">
+          <div class="menuiconContainer">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <div class="searchContainer">
+            <input type="text" placeholder="Search here..." />
+          </div>
+          <div class="userprofileContainer">
+            <img src="./images/user-6380868_640.png" alt="" />
+          </div>
+        </div>
+        <div class="dashboardContainer">
+          <h2 class="dasTitle">Dashboard</h2>
+          <div class="cardWrapper">
+            <div class="cardcontainer skyblue">
+              <i class="fa-solid fa-user"></i>
+              <p>User</p>
+              <h3>1234</h3>
+            </div>
+            <div class="cardcontainer yellow">
+              <i class="fa-sharp fa-solid fa-chart-simple"></i>
+              <p>Analytics</p>
+              <h3>12334</h3>
+            </div>
+            <div class="cardcontainer purple">
+              <i class="fa-regular fa-square-plus"></i>
+              <p>Post</p>
+              <h3>737483</h3>
+            </div>
+            <div class="cardcontainer red">
+              <i class="fa-solid fa-calendar-check"></i>
+              <p>event</p>
+              <h3>737483</h3>
+            </div>
+          </div>
+        </div>
+        <div class="userContainer">
+          <h4 class="userdatatitle">User Details</h4>
+          <div class="userdataTable">
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Joined</th>
+                  <th>Type</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John</td>
+                  <td>name@gmail.com</td>
+                  <td>01-12-2023</td>
+                  <td>Member</td>
+                  <td>Active</td>
+                </tr>
+                <tr>
+                  <td>Ramya</td>
+                  <td>name@gmail.com</td>
+                  <td>03-01-2024</td>
+                  <td>New</td>
+                  <td>Active</td>
+                </tr>
+                <tr>
+                  <td>Ram Kumar</td>
+                  <td>name@gmail.com</td>
+                  <td>22-10-2023</td>
+                  <td>New</td>
+                  <td>Active</td>
+                </tr>
+                <tr>
+                  <td>Dev</td>
+                  <td>name@gmail.com</td>
+                  <td>22-12-2023</td>
+                  <td>Member</td>
+                  <td>Active</td>
+                </tr>
+                <tr>
+                  <td>Suganya</td>
+                  <td>name@gmail.com</td>
+                  <td>20-12-2024</td>
+                  <td>New</td>
+                  <td>Active</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
