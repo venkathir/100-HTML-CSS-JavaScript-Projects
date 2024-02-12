@@ -1,0 +1,40 @@
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+  padding: 20px;
+}
+
+.cards {
+  width: 100%;
+  height: 80vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  /* -webkit-transition: all 700ms ease-in; */
+  transition: all 0.7s ease-in;
+
+  background-size: cover;
+  background-position: center;
+}
+.cards h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 1;
+}
+.cards.active {
+  flex: 5;
+}
+
+.cards.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
